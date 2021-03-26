@@ -1,0 +1,291 @@
+/***********iport fonts***********/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/*******reset css*****************/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/******body layout*******/
+
+html, body {
+    height: 100%;
+    color: white;
+    font-family: Ubuntu;
+  }
+
+  .time-display {
+    font-size: 4em;
+  }
+  
+  header {
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+  }
+
+  .timer {
+    z-index: 2;
+    margin-top: 40px;
+    margin-left: 3px;
+  }
+  
+  .player {
+      display:block;
+      margin:1px;
+    position: absolute;
+    top: 300px;
+    left: 20px;
+  }
+
+  .play {
+      display: inline-block;
+      margin: 20px;
+      margin-right: 63%;
+      margin-left: 37%;
+ 
+  }
+
+/*******text/typography*******/
+
+body {
+    font-family: Syne Mono;
+}
+
+/*****animation 1*****/
+
+@keyframes shimmer {
+    0%{
+      background-color: #0054FF;
+  
+    }
+    
+    25%{
+      background-color: #6C0CE8;
+  
+    }
+    
+    50% {
+      background-color: #FF009B;
+    }
+    
+    75% {
+      background-color: #EB9B81;
+    }
+    
+    90% {
+      background-color: #FFDEA3;    
+    }
+    
+    100%{
+      background-color: #0054FF;
+    }
+  }
+
+body {
+    overflow: hidden;
+    background-color: black;
+    animation: shimmer 10s infinite;
+  }
+  
+  /*****animation 2 *******/
+
+  @keyframes float {
+    0% {
+      opacity: 0.1;
+    }
+    
+    45% {
+      opacity: 1;
+    }
+
+    
+    100% {
+      opacity: 0.1;
+      transform: translate3d(0px, -1000px, 0px);
+    }
+  }
+  
+  @keyframes gradient1 {
+    
+    0% {
+      background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 24%, rgba(0,212,255,1) 100%);
+    }
+    
+    50% {
+      background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(247,119,244,1) 49%, rgba(255,252,0,1) 100%);
+    }
+    
+    100% {
+      background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(247,119,119,1) 49%, rgba(0,133,80,1) 100%);
+    }
+    
+  }
+  
+  @keyframes gradient2 {
+    0% {
+      background-color: #750017;
+    }
+    
+   15% {
+      background-color: #F74A6C;
+    }
+    
+    16% {
+      background-color: #2F0075;
+    }
+    
+    50% {
+      background-color: #8F4AF7;
+    }
+    
+    
+    100% {
+      background-color: #F50033;
+    }
+  }
+  
+
+  .squares {
+    /******note: inline-block******/
+    display: inline-flex;
+    background-color: red;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    align-items: end;
+    justify-content: end;
+    position: absolute;
+    bottom: 1px;
+    opacity: 0;
+  }
+  
+  .layer1 {
+    display: inline-block;
+    background-color: yellow;
+    width: 25px;
+    height: 25px;
+    animation: gradient2 4s infinite;
+  }
+  
+  #square-one {
+      animation: gradient1 5s infinite, float 9s infinite 1s;
+  }
+  
+  #square-two {
+    left: 200px;
+      animation: gradient1 5s infinite, float 6s infinite 2s;
+  }
+  
+  #square-three {
+    left: 400px;
+      animation: gradient1 5s infinite, float 6s infinite 3s;
+  }
+  
+  #square-four {
+    left: 600px;
+      animation: gradient1 5s infinite, float 6s infinite 4s;
+  }
+  
+  #square-five {
+    left: 800px;
+      animation: gradient1 5s infinite, float 9s infinite 5s;
+  }
+  
+  #square-six {
+    left: 1000px;
+      animation: gradient1 5s infinite, float 6s infinite 6s;
+  }
+  
+  #square-seven {
+    left: 1200px;
+      animation: gradient1 5s infinite, float 6s infinite 7s;
+  }
+  
+  #square-eight {
+    left: 1400px;
+      animation: gradient1 5s infinite, float 6s infinite 8s;
+  }
+  
+  #square-nine {
+    left: 1600px;
+      animation: gradient1 5s infinite, float 6s infinite 9s;
+  }
+  
+  #square-ten {
+    left: 1800px;
+      animation: gradient1 5s infinite, float 6s infinite 1s;
+  }
+  
+
+/*******assets layout*********/
+
+button {
+    background-color: rgba(0,133,80,0);
+    border: none;
+}
+
+/********media queries*************/
+
+@media only screen and (max-width: 1500px){
+    
+      body {
+          overflow-y:scroll;
+          overflow-x:hidden;
+      }
+  
+      .player {
+          left: 2px;
+          top: 200px;
+          display: inline-block;
+          width: 400px;
+          height: 400px;
+      }
+  }
