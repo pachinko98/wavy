@@ -6,7 +6,7 @@ const app = () => {
     //time display
     const timeDisplay = document.querySelector('.time-display');
    //duration
-   let fakeDuration = 600;
+   let fakeDuration = 470;
    //time selection
    const timeSelect = document.querySelectorAll('.time-select button');
 
