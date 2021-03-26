@@ -43,7 +43,7 @@ song.ontimeupdate = () => {
     let minutes = Math.floor(elapsed / 60);
     timeDisplay.textContent = `${minutes}:${seconds}`;
 
-    if(currentTime >= fakeDuration){
+    if(currentTime >= fakeDuration - 1){
         song.pause();
         song.currentTime = 0;
         play.src = 'assets/play.png';
