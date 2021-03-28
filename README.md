@@ -1,5 +1,7 @@
 # wavy
 
+A meditation app with three pieces of music, animations and a timer
+
 ## Languages used
 
 + HTML
