@@ -194,7 +194,7 @@ body {
   
 
   .squares {
-    /******note: inline-block******/
+    /******note: inline-flex******/
     display: inline-flex;
     background-color: red;
     margin: 10px;
@@ -274,14 +274,14 @@ button {
 
 /********media queries*************/
 
-@media only screen and (max-width: 769px){
+@media only screen and (max-width: 768px){
     
       body {
           overflow-y:hidden;
           overflow-x:hidden;
       }
 	
-      .animation {
+      .squares {
 	  display: none;
 	}
   
