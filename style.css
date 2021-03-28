@@ -280,6 +280,10 @@ button {
           overflow-y:hidden;
           overflow-x:hidden;
       }
+	
+      .animation {
+	  display: none;
+	}
   
       .player {
           left: 2px;
