@@ -1,6 +1,6 @@
 # wavy
 
-A meditation app with three pieces of music, animations and a timer
+A meditation app with three pieces of music, animations and a timer https://pachinko98.github.io/wavy/
 
 ## Languages used
 
